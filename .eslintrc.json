@@ -1,0 +1,48 @@
+{
+	"extends": ["prettier", "prettier/@typescript-eslint"],
+	"globals": {
+		"browser": true,
+		"cypress/globals": true,
+		"es6": true,
+		"node": true
+	},
+	"ignorePatterns": ["src/**/*"],
+	"overrides": [
+		{
+			"extends": [
+				"plugin:@angular-eslint/ng-cli-compat",
+				"plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
+				"plugin:@angular-eslint/template/process-inline-templates"
+			],
+			"files": ["*.ts"],
+			"parserOptions": {
+				"createDefaultProgram": true,
+				"project": ["tsconfig.json"]
+			},
+			"rules": {
+				"@angular-eslint/component-selector": [
+					"error",
+					{
+						"prefix": "app",
+						"style": "kebab-case",
+						"type": "element"
+					}
+				],
+				"@angular-eslint/directive-selector": [
+					"error",
+					{
+						"prefix": "app",
+						"style": "camelCase",
+						"type": "attribute"
+					}
+				]
+			}
+		},
+		{
+			"extends": ["plugin:@angular-eslint/template/recommended"],
+			"files": ["*.html"],
+			"rules": {}
+		}
+	],
+	"root": true
+}
