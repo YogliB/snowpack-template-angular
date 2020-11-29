@@ -5,20 +5,7 @@ module.exports = {
 		'out-tsc/app': '/_dist_',
 	},
 	plugins: [
-		[
-			'@snowpack/plugin-run-script',
-			{
-				cmd: 'ngcc --tsconfig ./tsconfig.app.json',
-				output: 'stream',
-			},
-		],
-		[
-			'@snowpack/plugin-run-script',
-			{
-				cmd: 'ngc --project ./tsconfig.app.json',
-				output: 'stream',
-			},
-		],
+		'./plugin.js',
 		'@snowpack/plugin-dotenv',
 	],
 	install: [
