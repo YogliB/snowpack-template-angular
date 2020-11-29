@@ -34,13 +34,10 @@ speed-measure-plugin*.json
 .history/*
 
 # misc
+*.log
 /.sass-cache
 /connect.lock
 /coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
 /typings
 
 # System Files
