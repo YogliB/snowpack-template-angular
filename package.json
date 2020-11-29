@@ -58,7 +58,7 @@
 		"build": "snowpack build",
 		"format": "prettier --write .",
 		"lint": "eslint --ignore-path .gitignore .",
-		"start": "snowpack dev",
+		"start": "snowpack dev --reload",
 		"e2e": "cypress open",
 		"e2e:silent": "cypress run"
 	}
