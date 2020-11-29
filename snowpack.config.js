@@ -2,17 +2,13 @@
 module.exports = {
 	mount: {
 		public: '/',
-		'out-tsc/app': '/_dist_',
 	},
-	plugins: [
-		'./plugin.js',
-		'@snowpack/plugin-dotenv',
-	],
+	plugins: ['./plugin.js', '@snowpack/plugin-dotenv'],
 	install: [
 		/* ... */
 	],
 	installOptions: {
-		/* ... */
+		installTypes: true,
 	},
 	devOptions: {
 		/* ... */
