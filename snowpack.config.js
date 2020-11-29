@@ -3,7 +3,7 @@ module.exports = {
 	mount: {
 		public: '/',
 	},
-	plugins: ['./plugin.js', '@snowpack/plugin-dotenv'],
+	plugins: ['snowpack-plugin-angular'],
 	install: [
 		/* ... */
 	],
