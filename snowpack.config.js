@@ -8,7 +8,7 @@ module.exports = {
 		/* ... */
 	],
 	installOptions: {
-		installTypes: true,
+		/* ... */
 	},
 	devOptions: {
 		/* ... */
