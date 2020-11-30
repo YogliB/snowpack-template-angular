@@ -1,5 +1,3 @@
-# Work In Progress
-
 # New Project
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
