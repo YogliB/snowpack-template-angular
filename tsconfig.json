@@ -12,14 +12,14 @@
 		"experimentalDecorators": true,
 		"forceConsistentCasingInFileNames": true,
 		"importHelpers": true,
-		"lib": ["es2018", "dom"],
-		"module": "es2020",
+		"lib": ["ESNext", "dom"],
+		"module": "ESNext",
 		"moduleResolution": "node",
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitReturns": true,
 		"outDir": "./dist/out-tsc",
 		"sourceMap": true,
 		"strict": true,
-		"target": "es2015"
+		"target": "ESNext"
 	}
 }
