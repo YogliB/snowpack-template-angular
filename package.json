@@ -58,6 +58,7 @@
 		"format": "prettier --write .",
 		"lint": "eslint --ignore-path .gitignore .",
 		"postinstall": "ngcc --tsconfig ./tsconfig.app.json",
-		"start": "snowpack dev"
+		"start": "snowpack dev",
+		"test": "jest ./src"
 	}
 }
