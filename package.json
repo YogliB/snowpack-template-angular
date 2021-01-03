@@ -1,7 +1,4 @@
 {
-	"browserslist": [
-		"defaults"
-	],
 	"dependencies": {
 		"@angular/animations": "~11.0.1",
 		"@angular/common": "~11.0.1",
@@ -14,6 +11,7 @@
 		"tslib": "^2.0.0",
 		"zone.js": "~0.10.2"
 	},
+	"description": "A preconfigured template for Snowpack with Angular",
 	"devDependencies": {
 		"@angular-eslint/eslint-plugin": "^0.8.0-beta.3",
 		"@angular-eslint/eslint-plugin-template": "^0.8.0-beta.3",
@@ -45,11 +43,22 @@
 			"./src/setup-jest.ts"
 		]
 	},
+	"keywords": [
+		"csa-template",
+		"snowpack",
+		"angular"
+	],
+	"license": "MIT",
+	"name": "snowpack-template-angular",
 	"prettier": {
 		"singleQuote": true,
 		"tabWidth": 4,
 		"trailingComma": "all",
 		"useTabs": true
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/YogliB/snowpack-template-angular.git"
 	},
 	"scripts": {
 		"build": "snowpack build",
@@ -60,5 +69,6 @@
 		"postinstall": "ngcc --tsconfig ./tsconfig.app.json",
 		"start": "snowpack dev",
 		"test": "jest ./src"
-	}
+	},
+	"version": "0.0.1"
 }
