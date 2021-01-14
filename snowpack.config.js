@@ -4,10 +4,7 @@ module.exports = {
 		public: '/',
 	},
 	plugins: ['snowpack-plugin-angular'],
-	install: [
-		/* ... */
-	],
-	installOptions: {
+	packageOptions: {
 		/* ... */
 	},
 	devOptions: {
@@ -16,9 +13,9 @@ module.exports = {
 	buildOptions: {
 		/* ... */
 	},
-	proxy: {
+	routes: [
 		/* ... */
-	},
+	],
 	alias: {
 		/* ... */
 	},
