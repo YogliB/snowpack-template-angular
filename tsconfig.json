@@ -16,7 +16,6 @@
 		"lib": ["ESNext", "dom"],
 		"module": "ESNext",
 		"moduleResolution": "node",
-		"outDir": "./dist/out-tsc",
 		"resolveJsonModule": true,
 		"sourceMap": true,
 		"strict": true,
