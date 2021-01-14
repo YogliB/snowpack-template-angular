@@ -1,23 +1,20 @@
 {
-	"extends": ["prettier", "prettier/@typescript-eslint"],
-	"env": {
-		"browser": true,
-		"cypress/globals": true,
-		"es6": true,
-		"node": true
-	},
-	"ignorePatterns": ["src/**/*"],
 	"overrides": [
 		{
 			"extends": [
-				"plugin:@angular-eslint/ng-cli-compat",
-				"plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
-				"plugin:@angular-eslint/template/process-inline-templates"
+				"plugin:@angular-eslint/recommended",
+				"plugin:@angular-eslint/template/process-inline-templates",
+				"prettier",
+				"prettier/@typescript-eslint"
 			],
 			"files": ["*.ts"],
 			"parserOptions": {
 				"createDefaultProgram": true,
-				"project": ["tsconfig.json"]
+				"project": [
+					"tsconfig.app.json",
+					"tsconfig.spec.json",
+					"e2e/tsconfig.json"
+				]
 			},
 			"rules": {
 				"@angular-eslint/component-selector": [
