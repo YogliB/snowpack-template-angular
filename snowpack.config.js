@@ -17,6 +17,6 @@ module.exports = {
 		/* ... */
 	],
 	alias: {
-		/* ... */
+		styles: './public/styles',
 	},
 };

@@ -20,6 +20,9 @@
 		"resolveJsonModule": true,
 		"sourceMap": true,
 		"strict": true,
-		"target": "ESNext"
+		"target": "ESNext",
+		"paths": {
+			"styles/*": ["./public/styles/*"]
+		}
 	}
 }
