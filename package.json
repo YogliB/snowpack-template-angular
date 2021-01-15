@@ -69,8 +69,7 @@
 		"lint": "eslint --ignore-path .gitignore .",
 		"postinstall": "ngcc --tsconfig ./tsconfig.app.json",
 		"start": "snowpack dev",
-		"test": "jest ./src",
-		"scully": "scully"
+		"test": "jest ./src"
 	},
 	"version": "0.3.0"
 }
