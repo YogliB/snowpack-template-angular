@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/angular';
-import { AppComponent } from './app.component';
+import { HomePageComponent } from './home-page.component';
 
-describe('AppComponent', () => {
+describe('HomePageComponent', () => {
 	test('should render text', async () => {
-		await render(AppComponent, {});
+		await render(HomePageComponent, {});
 
 		expect(screen.getByText('Learn Angular'));
 	});

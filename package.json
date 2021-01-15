@@ -16,6 +16,7 @@
 		"@angular-eslint/eslint-plugin": "^1.0.0",
 		"@angular-eslint/eslint-plugin-template": "^1.0.0",
 		"@angular-eslint/template-parser": "^1.0.0",
+		"@angular/cli": "~11.0.0",
 		"@angular/compiler": "~11.0.0",
 		"@angular/compiler-cli": "~11.0.0",
 		"@testing-library/angular": "^10.2.1",
@@ -68,7 +69,8 @@
 		"lint": "eslint --ignore-path .gitignore .",
 		"postinstall": "ngcc --tsconfig ./tsconfig.app.json",
 		"start": "snowpack dev",
-		"test": "jest ./src"
+		"test": "jest ./src",
+		"scully": "scully"
 	},
 	"version": "0.2.0"
 }
