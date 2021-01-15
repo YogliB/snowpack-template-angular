@@ -1,21 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-	mount: {
-		public: '/',
-	},
-	plugins: ['snowpack-plugin-angular'],
-	packageOptions: {
-		/* ... */
-	},
-	devOptions: {
-		/* ... */
-	},
-	buildOptions: {
-		/* ... */
-	},
-	routes: [
-		/* ... */
-	],
+	extends: 'snowpack-plugin-angular/snowpack.config.js',
+	mount: { public: '/' },
 	alias: {
 		styles: './public/styles',
 	},
