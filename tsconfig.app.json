@@ -4,6 +4,6 @@
 	"compilerOptions": {
 		"outDir": "./public/_dist_"
 	},
-	"files": ["src/main.ts", "src/polyfills.ts"],
+	"files": ["src/main.ts"],
 	"include": ["src/**/*.d.ts"]
 }
