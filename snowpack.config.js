@@ -5,4 +5,5 @@ module.exports = {
 	alias: {
 		styles: './public/styles',
 	},
+	packageOptions: { source: 'remote', types: true },
 };
