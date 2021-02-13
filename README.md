@@ -41,7 +41,7 @@ Go [here](https://github.com/angular-eslint/angular-eslint) for more information
 
 Launches [`prettier`](https://prettier.io/) and formats your code.
 
-e2e
+
 
 **For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/master/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
 
