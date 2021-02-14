@@ -18,7 +18,7 @@
 		"@angular-eslint/template-parser": "^1.0.0",
 		"@angular/cli": "~11.0.0",
 		"@angular/compiler": "~11.0.0",
-		"@angular/compiler-cli": "~11.0.0",
+		"@angular/compiler-cli": "~11.2.0",
 		"@testing-library/angular": "^10.2.1",
 		"@testing-library/cypress": "^7.0.2",
 		"@types/jest": "^26.0.15",
