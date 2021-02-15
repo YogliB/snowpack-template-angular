@@ -11,8 +11,8 @@ import { Component, OnDestroy } from '@angular/core';
 					alt="logo"
 				/>
 				<p>
-					Edit <code>src/app/app.component.html</code> and save to
-					reload.
+					Edit <code>src/app/pages/home/home.component.ts</code> and
+					save to reload.
 				</p>
 				<p>
 					Page has been open for <code>{{ count }}</code> seconds.
