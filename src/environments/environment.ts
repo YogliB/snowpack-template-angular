@@ -4,7 +4,7 @@ let environment = {
 	production: false,
 };
 
-if ((import.meta as any).env.MODE === 'production') {
+if (import.meta.env.MODE === 'production') {
 	environment = prodEnvironment;
 }
 
