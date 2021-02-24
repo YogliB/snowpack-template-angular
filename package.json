@@ -69,6 +69,7 @@
 		"e2e:silent": "cypress run",
 		"format": "prettier --write .",
 		"lint": "eslint --ignore-path .gitignore .",
+		"postinstall": "ngcc",
 		"start": "snowpack dev",
 		"test": "jest ./src"
 	},
