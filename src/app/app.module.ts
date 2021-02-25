@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { ApplicationRef, DoBootstrap, Injector, NgModule } from '@angular/core';
+import { createCustomElement } from '@angular/elements';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +9,19 @@ import { AppRoutingModule } from './app-routing.module';
 	declarations: [AppComponent],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
-	bootstrap: [AppComponent],
+	entryComponents: [AppComponent],
 })
-export class AppModule {}
+export class AppModule implements DoBootstrap {
+	constructor(private injector: Injector) {
+		const el = createCustomElement(AppComponent, {
+			injector: this.injector,
+		});
+		customElements.define('app-root', el);
+	}
+
+	public ngDoBootstrap(appRef: ApplicationRef) {
+		if (document.querySelector('app-root')) {
+			appRef.bootstrap(AppComponent);
+		}
+	}
+}
