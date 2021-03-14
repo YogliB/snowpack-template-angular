@@ -1,6 +1,6 @@
-# Moved
+# Migration In Process
 
-This template has been moved and is now managed at the [snowpack-angular](https://github.com/YogliB/snowpack-angular/tree/main/templates/base) monorepo. Please update your dependencies. This repository is no longer maintained.
+This template is beening moved to the official Snowpack respository.
 
 # New Project
 
